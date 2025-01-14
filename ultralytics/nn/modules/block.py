@@ -1196,7 +1196,7 @@ from torchvision import models
 # mobilenet_v2
 #----------------------------------------------------------------------
 class mobilenet_v21(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.mobilenet_v2(pretrained=True)
         modules = list(model.children())
@@ -1206,7 +1206,7 @@ class mobilenet_v21(nn.Module):
         return self.model(x)
     
 class mobilenet_v22(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.mobilenet_v2(pretrained=True)
         modules = list(model.children())
@@ -1216,7 +1216,7 @@ class mobilenet_v22(nn.Module):
         return self.model(x)
     
 class mobilenet_v23(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.mobilenet_v2(pretrained=True)
         modules = list(model.children())
@@ -1231,7 +1231,7 @@ class mobilenet_v23(nn.Module):
 #----------------------------------------------------------------------
 class mobileNetV3s1(nn.Module):
     # out channel 24
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.mobilenet_v3_small(pretrained=True)
         modules = list(model.children())
@@ -1243,7 +1243,7 @@ class mobileNetV3s1(nn.Module):
 
 class mobileNetV3s2(nn.Module):
     # out 48 channel
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.mobilenet_v3_small(pretrained=True)
         modules = list(model.children())
@@ -1255,7 +1255,7 @@ class mobileNetV3s2(nn.Module):
 
 class mobileNetV3s3(nn.Module):
     # out 576 channel
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.mobilenet_v3_small(pretrained=True)
         modules = list(model.children())
@@ -1269,7 +1269,7 @@ class mobileNetV3s3(nn.Module):
 # efficientnet_b0
 #----------------------------------------------------------------------
 class efficientnet_b01(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.efficientnet_b0(pretrained=True)
         modules = list(model.children())
@@ -1279,7 +1279,7 @@ class efficientnet_b01(nn.Module):
         return self.model(x)
     
 class efficientnet_b02(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.efficientnet_b0(pretrained=True)
         modules = list(model.children())
@@ -1289,7 +1289,7 @@ class efficientnet_b02(nn.Module):
         return self.model(x)
     
 class efficientnet_b03(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.efficientnet_b0(pretrained=True)
         modules = list(model.children())
@@ -1303,7 +1303,7 @@ class efficientnet_b03(nn.Module):
 # efficientnet_b1
 #----------------------------------------------------------------------
 class efficientnet_b11(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.efficientnet_b1(pretrained=True)
         modules = list(model.children())
@@ -1313,7 +1313,7 @@ class efficientnet_b11(nn.Module):
         return self.model(x)
     
 class efficientnet_b12(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.efficientnet_b1(pretrained=True)
         modules = list(model.children())
@@ -1323,7 +1323,7 @@ class efficientnet_b12(nn.Module):
         return self.model(x)
     
 class efficientnet_b13(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.efficientnet_b1(pretrained=True)
         modules = list(model.children())
@@ -1336,7 +1336,7 @@ class efficientnet_b13(nn.Module):
 # efficientnet_v2_s
 #----------------------------------------------------------------------
 class efficientnet_v2_s1(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.efficientnet_v2_s(pretrained=True)
         modules = list(model.children())
@@ -1345,7 +1345,7 @@ class efficientnet_v2_s1(nn.Module):
     def forward(self, x):
         return self.model(x)
 class efficientnet_v2_s2(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.efficientnet_v2_s(pretrained=True)
         modules = list(model.children())
@@ -1355,7 +1355,7 @@ class efficientnet_v2_s2(nn.Module):
         return self.model(x)
     
 class efficientnet_v2_s3(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.efficientnet_v2_s(pretrained=True)
         modules = list(model.children())
@@ -1369,7 +1369,7 @@ class efficientnet_v2_s3(nn.Module):
 # resnet18
 #----------------------------------------------------------------------
 class resnet181(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.resnet18(pretrained=True)
         modules = list(model.children())
@@ -1379,7 +1379,7 @@ class resnet181(nn.Module):
         return self.model(x)
     
 class resnet182(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.resnet18(pretrained=True)
         modules = list(model.children())
@@ -1389,7 +1389,7 @@ class resnet182(nn.Module):
         return self.model(x)
     
 class resnet183(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.resnet18(pretrained=True)
         modules = list(model.children())
@@ -1403,7 +1403,7 @@ class resnet183(nn.Module):
 # resnet34
 #----------------------------------------------------------------------
 class resnet341(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.resnet34(pretrained=True)
         modules = list(model.children())
@@ -1413,7 +1413,7 @@ class resnet341(nn.Module):
         return self.model(x)
     
 class resnet342(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.resnet34(pretrained=True)
         modules = list(model.children())
@@ -1423,7 +1423,7 @@ class resnet342(nn.Module):
         return self.model(x)
     
 class resnet343(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.resnet34(pretrained=True)
         modules = list(model.children())
@@ -1437,7 +1437,7 @@ class resnet343(nn.Module):
 # resnet50
 #----------------------------------------------------------------------
 class resnet501(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.resnet50(pretrained=True)
         modules = list(model.children())
@@ -1447,7 +1447,7 @@ class resnet501(nn.Module):
         return self.model(x)
     
 class resnet502(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.resnet50(pretrained=True)
         modules = list(model.children())
@@ -1457,7 +1457,7 @@ class resnet502(nn.Module):
         return self.model(x)
     
 class resnet503(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.resnet50(pretrained=True)
         modules = list(model.children())
@@ -1471,7 +1471,7 @@ class resnet503(nn.Module):
 # wide_resnet50_2
 #----------------------------------------------------------------------
 class wide_resnet50_21(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.wide_resnet50_2(pretrained=True)
         modules = list(model.children())
@@ -1481,7 +1481,7 @@ class wide_resnet50_21(nn.Module):
         return self.model(x)
     
 class wide_resnet50_22(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.wide_resnet50_2(pretrained=True)
         modules = list(model.children())
@@ -1491,7 +1491,7 @@ class wide_resnet50_22(nn.Module):
         return self.model(x)
     
 class wide_resnet50_23(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.wide_resnet50_2(pretrained=True)
         modules = list(model.children())
@@ -1505,7 +1505,7 @@ class wide_resnet50_23(nn.Module):
 # vgg11_bn
 #----------------------------------------------------------------------
 class vgg11_bn1(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.vgg11_bn(pretrained=True)
         modules = list(model.children())
@@ -1515,7 +1515,7 @@ class vgg11_bn1(nn.Module):
         return self.model(x)
     
 class vgg11_bn2(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.vgg11_bn(pretrained=True)
         modules = list(model.children())
@@ -1525,7 +1525,7 @@ class vgg11_bn2(nn.Module):
         return self.model(x)
     
 class vgg11_bn3(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.vgg11_bn(pretrained=True)
         modules = list(model.children())
@@ -1539,7 +1539,7 @@ class vgg11_bn3(nn.Module):
 # convnext_tiny
 #----------------------------------------------------------------------
 class convnext_tiny1(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.convnext_tiny(pretrained=True)
         modules = list(model.children())
@@ -1549,7 +1549,7 @@ class convnext_tiny1(nn.Module):
         return self.model(x)
     
 class convnext_tiny2(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.convnext_tiny(pretrained=True)
         modules = list(model.children())
@@ -1559,7 +1559,7 @@ class convnext_tiny2(nn.Module):
         return self.model(x)
     
 class convnext_tiny3(nn.Module):
-    def __init__(self, ignore) -> None:
+    def __init__(self, *args):
         super().__init__()
         model = models.convnext_tiny(pretrained=True)
         modules = list(model.children())
