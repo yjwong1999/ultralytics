@@ -1196,7 +1196,7 @@ class mobilenet_v23(nn.Module):
 #----------------------------------------------------------------------
 # mobilenet_v3_small
 #----------------------------------------------------------------------
-class MobileNetV3s1(nn.Module):
+class mobileNetV3s1(nn.Module):
     # out channel 24
     def __init__(self, ignore) -> None:
         super().__init__()
@@ -1208,7 +1208,7 @@ class MobileNetV3s1(nn.Module):
     def forward(self, x):
         return self.model(x)
 
-class MobileNetV3s2(nn.Module):
+class mobileNetV3s2(nn.Module):
     # out 48 channel
     def __init__(self, ignore) -> None:
         super().__init__()
@@ -1220,7 +1220,7 @@ class MobileNetV3s2(nn.Module):
     def forward(self, x):
         return self.model(x)
 
-class MobileNetV3s3(nn.Module):
+class mobileNetV3s3(nn.Module):
     # out 576 channel
     def __init__(self, ignore) -> None:
         super().__init__()
